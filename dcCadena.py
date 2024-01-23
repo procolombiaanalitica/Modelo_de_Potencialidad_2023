@@ -1,8 +1,11 @@
 import pandas as pd
 import os
 
-directorio=r"C:\Users\pgic2\OneDrive - PROCOLOMBIA\MPE\Segundo Semestre\Finales\modelo_potencialidad-main\files3\Base OG\Base prod potenciales.txt"
-base=pd.read_csv(directorio,
+path=os.getcwd()
+
+#directorio=r"C:\Users\pgic2\OneDrive - PROCOLOMBIA\MPE\Segundo Semestre\Finales\modelo_potencialidad-main\files3\Base OG\Base prod potenciales.txt"
+
+base=pd.read_csv("{}/files3/Base prod potenciales.zip".format(path),
     sep="|",encoding="utf-8",dtype={"Pais":str,"Posición":str,'Descripcion':str})
 
 agro=base.copy()
