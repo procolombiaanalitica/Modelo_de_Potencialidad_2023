@@ -1,0 +1,1 @@
+# Modelo_de_Potencialidad_2023
