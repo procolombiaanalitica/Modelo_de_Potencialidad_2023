@@ -749,6 +749,8 @@ children2=[
                         ),
                     href="/")
                     ,style={'padding-top':'25px'}),
+                    dbc.Alert("Recuerde seleccionar primero la cadena de interés antes de proceder con los demás filtros.",color="danger"), 
+
                 ]),
                 dbc.Tabs(
             [
@@ -928,7 +930,8 @@ app.layout = html.Div(
                     ,href="/")
                     ,style={'padding-top':'25px'}),
                 ]),
-            
+                dbc.Alert("Recuerde seleccionar primero la cadena de interés antes de proceder con los demás filtros.",color="danger",style={'margin-top': '3px', 'margin-bottom': '0','width': 'auto'}), 
+
             dbc.Tabs(
             [
             dbc.Tab(label="Sector",tab_id="t1", tab_style={"margin-left": "auto"},label_style={'color':dict_colors['t1']}),
