@@ -749,8 +749,6 @@ children2=[
                         ),
                     href="/")
                     ,style={'padding-top':'25px'}),
-                    dbc.Alert("Recuerde seleccionar primero la cadena de interés antes de proceder con los demás filtros.",color="danger"), 
-
                 ]),
                 dbc.Tabs(
             [
